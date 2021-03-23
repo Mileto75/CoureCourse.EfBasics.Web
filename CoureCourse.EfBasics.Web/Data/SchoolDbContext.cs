@@ -17,5 +17,6 @@ namespace CoureCourse.EfBasics.Web.Data
 
         }
 
+        
     }
 }

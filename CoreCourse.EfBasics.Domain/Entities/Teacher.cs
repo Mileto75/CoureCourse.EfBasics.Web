@@ -10,6 +10,7 @@ namespace CoreCourse.EfBasics.Domain.Entities
         public string Name { get; set; }
         public decimal YearlyWage { get; set; }
         public int DepartmentId { get; set; }
+        public string HomeTown { get; set; }
         public ICollection<Course> Courses { get; set; }
     }
 }

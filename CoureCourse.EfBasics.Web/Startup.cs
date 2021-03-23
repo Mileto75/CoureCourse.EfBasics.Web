@@ -33,7 +33,9 @@ namespace CoureCourse.EfBasics.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<SchoolDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SchoolDb")));
+            //ipv Dependency te registreren gebruiken we een 
+            //Factory class in de folder Data
+            //services.AddDbContext<SchoolDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SchoolDb")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
